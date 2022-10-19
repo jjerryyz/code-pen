@@ -1,0 +1,24 @@
+:root {
+  --bg: hsl(200 50% 5%);
+  --fg: hsl(200 10% 98%);
+  --accent: hsl(250 75% 80%);
+}
+
+:root:has(.theme > [value="light"]:checked) {
+  --fg: hsl(200 50% 10%);
+  --bg: hsl(200 10% 92%);
+  --accent: hsl(250 75% 40%);
+}
+:root:has(.theme > [value="rainbow"]:checked) {
+  --fg: hsl(200 50% 10%);
+  --bg: linear-gradient(red, yellow, orange, blue);
+  --accent: hsl(250 75% 40%);
+}
+
+body {
+  font-family: system-ui;
+  font-size: 1.5rem;
+  padding: 2rem;
+  background: var(--bg);
+  color: var(--fg);
+}

@@ -1,0 +1,25 @@
+{
+  "name": "anime-js-grid-effect",
+  "version": "1.0.0",
+  "description": "",
+  "main": "rollup.config.js",
+  "scripts": {
+    "dev": "rollup -w -c"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cssnano": "^5.1.13",
+    "node-sass": "^7.0.3",
+    "postcss-cssnext": "^3.1.1",
+    "rollup-plugin-generate-html-template": "^1.7.0",
+    "rollup-plugin-livereload": "^2.0.5",
+    "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-scss": "^3.0.0",
+    "rollup-plugin-serve": "^2.0.1",
+    "sass": "^1.55.0"
+  },
+  "dependencies": {
+    "animejs": "^3.2.1"
+  }
+}

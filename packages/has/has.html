@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="./has.css">
+</head>
+
+<body>
+  <article>
+    <h1 class="article__title">Exploring <code>:has()</code></h1>
+    <select class="theme" name="" id="">
+      <option value="dark">dark</option>
+      <option value="light">light</option>
+      <option value="rainbow">rainbow</option>
+    </select>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere, quam!</p>
+    <p>Dolorem impedit est ab laborum quisquam atque a sit debitis!</p>
+
+    <button class="for-modal">Open Modal</button>
+
+    <dialog class="example-modal">
+      <h2>A modal dialog</h2>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, in!</p>
+      <button class="close-modal">Close modal</button>
+      <form action="modal">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" placeholder="John Doe">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" placeholder="john@gmail.com">
+        </div>
+      </form>
+    </dialog>
+
+    <div class="grid-columns">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quis non porro iure ratione ipsam saepe ducimus
+        quidem quae asperiores.</p>
+      <p>Quod ipsa aperiam, saepe delectus cumque quos? Repellat necessitatibus dolores pariatur quo sit iste. Neque
+        nihil
+        laudantium eius beatae distinctio.</p>
+    </div>
+    <div class="grid-columns">
+      <p>Quos nostrum praesentium esse architecto sequi, voluptas rem quidem ipsam impedit. Incidunt quas voluptas quam
+        suscipit consequuntur eum possimus ad?</p>
+      <p>Incidunt voluptates sapiente eos minima, exercitationem dicta, quisquam laudantium eius eligendi quam
+        dignissimos
+        quibusdam repudiandae iste quaerat alias id. Magnam.</p>
+      <p>Quod obcaecati, aut molestiae similique corporis dignissimos laborum, necessitatibus illo inventore, voluptas
+        optio sequi. Delectus corrupti culpa ipsum quibusdam exercitationem.</p>
+    </div>
+    <div class="grid-columns">
+      <p>Suscipit quam ullam sequi facilis blanditiis officia dignissimos, explicabo voluptatem ut magnam neque laborum
+        facere, voluptas magni, excepturi voluptate harum.</p>
+      <p>Fugiat culpa vel numquam nihil pariatur quas nam ipsam tenetur? Magnam, earum a praesentium natus at dolorem
+        laboriosam impedit recusandae.</p>
+      <p>Et velit dolor, hic voluptas incidunt praesentium sint, accusantium omnis ea consequuntur eligendi itaque
+        soluta
+        veritatis magni laborum doloribus odio.</p>
+      <p>Est porro corrupti atque reiciendis nemo enim perspiciatis? Pariatur nobis in aut harum. Delectus facilis
+        nostrum
+        ut ullam soluta nihil.</p>
+    </div>
+    <div class="grid-columns">
+      <p>Recusandae illo exercitationem id neque et. Nobis, saepe voluptatem. Optio unde cumque dignissimos minus
+        voluptatem quis expedita illo quaerat delectus?</p>
+      <p>Vero unde, deleniti iste error mollitia sint veritatis similique quaerat nihil debitis doloremque voluptate
+        obcaecati cumque ipsa laborum et aliquam!</p>
+      <p>Nihil, officia molestias ipsum id, accusamus optio at accusantium natus non sed consectetur fugiat quasi unde
+        quas sit hic dignissimos.</p>
+      <p>Iusto sequi voluptas aspernatur impedit, suscipit atque autem numquam eius cum molestias officiis delectus
+        deserunt maiores quam placeat quasi perspiciatis?</p>
+      <p>Eveniet enim illum consequuntur nemo excepturi fugit explicabo? Vero, error! At, incidunt! Ipsum facilis
+        laboriosam perferendis maiores animi deleniti similique?</p>
+    </div>
+    <div class="grid-columns">
+      <p>Minima quaerat, quibusdam accusamus voluptatibus esse nemo, dicta beatae consectetur vero, deleniti eum vel
+        totam
+        impedit nesciunt quas labore consequuntur?</p>
+      <p>Reiciendis, similique excepturi possimus sit suscipit, eaque dolorum, praesentium mollitia voluptate eveniet
+        fugit esse! Incidunt, consequatur. Reiciendis facere sit cumque?</p>
+      <p>Illum eaque quas nostrum in ea expedita pariatur consequatur enim, atque accusamus tempore, obcaecati eos totam
+        natus temporibus repudiandae minus.</p>
+      <p>Incidunt fugiat iusto modi commodi aperiam veritatis magni quo quod ullam! Eum pariatur inventore doloremque
+        nostrum illum molestias explicabo ea.</p>
+      <p>Iure molestiae culpa delectus id ipsam sunt obcaecati doloribus esse hic quam, in consequuntur, ducimus
+        assumenda? Assumenda fuga modi deserunt.</p>
+      <p>Voluptas ducimus porro quasi distinctio. Minus et deleniti iste ex a magnam? Placeat facilis velit non repellat
+        veritatis iste molestias.</p>
+    </div>
+
+    <div class="carousel">
+      <img
+        src='https://images.unsplash.com/photo-1661698049415-8cc9663cdadb?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM2MTEwOTQ&ixlib=rb-1.2.1&q=80&w=400'
+        alt=''>
+      <img
+        src='https://images.unsplash.com/photo-1661480825224-d67b174be4a6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM2MTEwOTQ&ixlib=rb-1.2.1&q=80&w=400'
+        alt=''>
+      <img
+        src='https://images.unsplash.com/photo-1661101945601-036bc8bf7b36?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM2MTEwOTQ&ixlib=rb-1.2.1&q=80&w=400'
+        alt=''>
+
+      <img
+        src='https://images.unsplash.com/photo-1662132337648-45a50464402a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM2MTExMjg&ixlib=rb-1.2.1&q=80&w=400'
+        alt=''>
+      <!-- <img src='https://images.unsplash.com/photo-1661242470173-406d23647f31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM2MTExOTU&ixlib=rb-1.2.1&q=80&w=400' alt=''> -->
+      <!-- <img src='https://images.unsplash.com/photo-1661177408630-bc073458081b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM2MTExOTU&ixlib=rb-1.2.1&q=80&w=400' alt=''> -->
+    </div>
+    <div class="carousel">
+      <img
+        src='https://images.unsplash.com/photo-1661180137635-2ea66e9ed3df?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM2MTExMjg&ixlib=rb-1.2.1&q=80&w=400'
+        alt=''>
+      <img
+        src='https://images.unsplash.com/photo-1661183812824-add2ef881c84?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM2MTExMjg&ixlib=rb-1.2.1&q=80&w=400'
+        alt=''>
+      <img
+        src='https://images.unsplash.com/photo-1661705853111-8c196daee311?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM2MTExMjg&ixlib=rb-1.2.1&q=80&w=400'
+        alt=''>
+      <img
+        src='https://images.unsplash.com/photo-1662288346057-6190cf5d7b42?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM2MTExNzY&ixlib=rb-1.2.1&q=80&w=400'
+        alt=''>
+      <img
+        src='https://images.unsplash.com/photo-1662572314679-32bdaf079b79?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM2MTExNzA&ixlib=rb-1.2.1&q=80&w=400'
+        alt=''>
+      <img
+        src='https://images.unsplash.com/photo-1662132337648-45a50464402a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM2MTExMjg&ixlib=rb-1.2.1&q=80&w=400'
+        alt=''>
+      <img
+        src='https://images.unsplash.com/photo-1661437217309-2211ee9130a5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM2MTExOTU&ixlib=rb-1.2.1&q=80&w=400'
+        alt=''>
+      <img
+        src='https://images.unsplash.com/photo-1661242470173-406d23647f31?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM2MTExOTU&ixlib=rb-1.2.1&q=80&w=400'
+        alt=''>
+      <img
+        src='https://images.unsplash.com/photo-1661177408630-bc073458081b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwzMjM4NDZ8MHwxfHJhbmRvbXx8fHx8fHx8fDE2NjM2MTExOTU&ixlib=rb-1.2.1&q=80&w=400'
+        alt=''>
+    </div>
+    <p>Quod fuga voluptates voluptatem inventore at, temporibus perspiciatis in cum molestiae ab nam recusandae,
+      laudantium reprehenderit, ea quis. Ea, id!</p>
+    <p>Velit blanditiis reprehenderit optio incidunt. Delectus, quos. Nihil quisquam repellat ex et. Dolor veritatis
+      error
+      aspernatur esse quas! Debitis, quis!</p>
+    <p>Obcaecati sequi eum quasi dolorum minus consequuntur corporis excepturi perferendis officiis laudantium? Dolorum
+      ducimus reprehenderit, labore sapiente accusantium omnis veniam.</p>
+    <p>Tenetur quibusdam illo sunt adipisci nostrum doloribus eveniet consectetur odio labore, deleniti ad, perspiciatis
+      velit similique exercitationem, necessitatibus reprehenderit ab?</p>
+    <p>Quis quae beatae excepturi fuga minus reiciendis accusantium quam culpa temporibus tenetur. Itaque corporis non
+      eos
+      fugiat, inventore maiores explicabo.</p>
+    <p>Magni veritatis voluptatum dolorem ea, nulla qui quasi mollitia repudiandae quod repellendus vero sit blanditiis
+      nam at iusto omnis doloribus.</p>
+    <p>Illo iste, harum expedita voluptas mollitia dolorem doloremque fugit aspernatur consectetur, sequi reiciendis rem
+      debitis voluptatum cumque natus repellendus eligendi?</p>
+    <p>Nesciunt, repellendus saepe recusandae id dolor ipsam sapiente reiciendis nemo possimus exercitationem veniam
+      culpa
+      alias! Dolor praesentium nam quos officia!</p>
+    <p>Deleniti mollitia dolorum fuga. Incidunt deserunt, odit, quos laborum quaerat impedit vitae aut quod eaque sequi
+      eos. Alias, corporis rem?</p>
+    <p>Temporibus, consequatur laudantium. Amet iure deserunt ullam enim obcaecati quod tenetur quia magni atque
+      mollitia
+      temporibus cupiditate, perferendis sed explicabo?</p>
+    <p>Maxime minima quae, quasi dolor asperiores recusandae vitae esse ducimus ipsa! Ad explicabo optio sequi molestiae
+      adipisci distinctio libero id.</p>
+    <p>Temporibus dolor voluptas beatae excepturi corrupti tenetur iure tempora neque illo, nisi, ea, quis accusantium.
+      Aperiam, quod quidem. Dolores, ut.</p>
+    <p>Hic dolorem commodi sunt at officiis consequuntur possimus molestiae pariatur veritatis. Totam, tempora tenetur
+      harum voluptates consequuntur iure quis nihil.</p>
+    <p>Quibusdam voluptatum optio eos a minima doloremque tempora ab necessitatibus voluptatem fuga itaque, laborum
+      nihil
+      mollitia quas. Cumque, pariatur velit?</p>
+    <p>Molestias quidem id quisquam dolore qui. Corrupti, porro blanditiis eaque reiciendis, itaque nemo vero, at optio
+      saepe obcaecati eius impedit.</p>
+    <p>Rem quis quod nemo. Quia cumque maiores libero earum corporis labore ipsa ratione perspiciatis distinctio,
+      doloribus laudantium inventore quidem neque.</p>
+    <p>Tempore quisquam tenetur excepturi placeat? Nemo, consequatur? Quibusdam enim expedita repellat dicta ipsam
+      sapiente sunt, ipsa voluptatibus voluptas asperiores voluptatem!</p>
+    <p>Nemo quo repellendus modi deleniti totam error tenetur repudiandae debitis commodi facilis nam accusamus
+      voluptatibus veritatis, rerum corrupti voluptate eum?</p>
+    <p>Deleniti repellendus excepturi itaque, tempora voluptatem suscipit est quae dicta, velit commodi fugit, impedit
+      ipsa ut tempore illum deserunt corrupti!</p>
+    <p>Architecto quod voluptas provident impedit nisi minus voluptatum cum consequuntur maiores! Culpa ipsa est
+      adipisci
+      distinctio, dicta iure laborum amet!</p>
+    <p>Ducimus, odit repudiandae quibusdam possimus voluptates natus voluptate voluptas doloremque alias atque ex
+      cupiditate adipisci suscipit nisi rem fuga facere?</p>
+    <p>Officia molestias, blanditiis quis harum deleniti veniam incidunt animi suscipit magni minima rem aspernatur eos
+      enim alias in obcaecati labore.</p>
+    <p>Perferendis aperiam quae nisi consequuntur praesentium, omnis at quod quasi reprehenderit reiciendis, possimus
+      sequi, animi est error officia iusto voluptatibus.</p>
+    <p>Dolore eius eligendi ullam incidunt impedit? Autem voluptatibus vero quae cum deserunt non error facere eveniet,
+      beatae expedita veniam totam?</p>
+    <p>Suscipit dolores non hic ducimus accusamus, aliquam totam ad quo, fugit ut quidem architecto dolorem cumque
+      fugiat
+      commodi deleniti harum.</p>
+    <p>Ex error voluptatem quia. Iusto, accusantium, quas omnis consectetur quibusdam excepturi eveniet assumenda
+      corporis
+      ab, nisi doloremque suscipit qui! Minima?</p>
+    <p>Odit eos maiores reiciendis, rem qui voluptatem ullam vitae dicta, quisquam repellendus dolore dolorem? Eius sunt
+      optio corrupti iste corporis?</p>
+    <p>Expedita eius eum, eos voluptatum explicabo laborum accusamus dolores distinctio et animi necessitatibus alias
+      dicta nisi? Autem soluta tenetur fuga?</p>
+    <p>Iure velit aliquid, cumque, laboriosam aspernatur commodi corrupti maxime esse dignissimos harum deserunt,
+      eligendi
+      libero in quasi atque eos voluptatem?</p>
+    <p>Veniam labore ad officiis sed dignissimos totam quidem, neque quis, quisquam cumque deserunt commodi modi unde.
+      Aspernatur ab obcaecati eaque.</p>
+  </article>
+</body>
+
+</html>
