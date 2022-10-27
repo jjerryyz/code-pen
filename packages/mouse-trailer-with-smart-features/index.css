@@ -1,0 +1,56 @@
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+  --point-size: 15px;
+}
+
+body:hover>#trailer {
+  opacity: 1;
+}
+
+.content-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: auto;
+  width: fit-content;
+  height: 100%;
+}
+
+.content-box>.wrapper {
+  width: 30vw;
+  aspect-ratio: 9 / 16;
+  background-color: white;
+  opacity: 0.4;
+  background-size: 100%;
+  transition: background-size 400ms ease, opacity 400ms ease;
+}
+
+.content-box>.wrapper:hover {
+  background-size: 105%;
+  opacity: 0.8;
+}
+
+#trailer {
+  width: var(--point-size);
+  height: var(--point-size);
+  position: fixed;
+  pointer-events: none;
+
+  border-radius: 50px;
+  background-color: white;
+  z-index: 1000;
+
+  opacity: 0;
+  transition: opacity 500ms ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#trailer>.material-icons {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.6);
+}
