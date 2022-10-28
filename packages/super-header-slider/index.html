@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super header Slider</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<style>
+  :root {
+    --dark: rgb(20, 20, 20);
+    --yellow: rgb(253, 216, 53);
+    --blue: rgb(98, 0, 234);
+
+    --c1: rgb(38, 70, 83);
+    --c2: rgb(42, 157, 143);
+
+    --left-color: var(--c1);
+    --right-color: var(--c2);
+  }
+
+  .slide {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+  }
+
+  .slide .title {
+    font-family: "Rubik", sans-serif;
+    font-size: 8vw;
+    text-align: center;
+    width: 100vw;
+  }
+
+  .slide .fancy {
+    font-family: "Lobster", cursive;
+    font-size: 1.3em;
+    line-height: 0.8em;
+  }
+
+  #left.slide {
+    color: white;
+    background-color: var(--left-color);
+    width: 40%;
+    overflow: hidden;
+    z-index: 1;
+  }
+
+  #right.slide {
+    color: black;
+    background-color: var(--right-color);
+  }
+</style>
+
+<body>
+
+  <div id="left" class="slide">
+    <div class="title">Sometimes a simple headers is <spn class="fancy">better</spn>
+    </div>
+  </div>
+  <div id="right" class="slide">
+    <div class="title">Sometimes a simple headers is <span class="fancy">better</span></div>
+  </div>
+
+  <script>
+    const left = document.getElementById('left')
+
+    const onChange = e => {
+      left.style.width = `${(e.clientX / window.innerWidth) * 100}%`
+    }
+
+    document.onmousemove = e => onChange(e)
+
+    document.ontouchmove = e => onChange(e.touches[0]);
+
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,83 @@
+:root {
+  --border: rgb(3, 169, 244);
+  --g1: rgb(98, 0, 234);
+  --g2: rgb(236, 64, 122);
+  --g3: rgb(253, 216, 53);
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  display: grid;
+  place-items: center;
+  margin: 0;
+}
+
+#card {
+  position: relative;
+  aspect-ratio: 1 / 1.6;
+  border: 0.5vmin solid var(--border);
+  width: 56vmin;
+}
+
+#card:before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(130deg, transparent 0% 33%, var(--g1) 66%, var(--g2) 83.5%, var(--g3) 100%);
+  background-size: 300% 300%;
+  background-position: 0% 0%;
+  content: "";
+  transition: background-position 350ms ease, transform 350ms ease;
+  z-index: 1;
+}
+
+#card:hover:before {
+  background-position: 100% 100%;
+  transform: scale(1.08, 1.03);
+}
+
+.card-content {
+  position: relative;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.2)8%, transparent 8%);
+  background-size: 5vmin 5vmin;
+  background-position: 0% 0%;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  z-index: 2;
+}
+
+.card-title,
+.card-subtitle {
+  color: white;
+  font-family: "Anek Latin", sans-serif;
+  font-weight: 400;
+  margin: 0px;
+}
+
+.card-title {
+  font-size: 6vmin;
+}
+
+.card-subtitle {
+  font-size: 3vmin;
+  margin-top: 2vmin;
+}
+
+#card:hover .card-subtitle-word {
+  opacity: 1;
+  transform: translateY(0%);
+  transition: opacity 0ms, transform 200ms cubic-bezier(.13, .9, .73, .51);
+}
+
+.card-subtitle-word {
+  display: inline-block;
+  margin: 0vmin 0.3vmin;
+  opacity: 0;
+  transform: translateY(40%);
+  transition: none;
+}
